@@ -14,12 +14,23 @@
       <div class="message-body">개는 인간의 반려 동물이다.</div>
     </article>
     
+    <div class="columns">
+      <div class="column">
+        <div class="container">
+            <figure class="image is-squre">
+                <img src="https://png.pngtree.com/element_origin_min_pic/17/03/15/4c1ae80f774b774ffa95cf0888f64103.jpg" alt="">
+                </figure>
 
-    <div class="container"><!--이미지 삽입-->
-      <figure class="image is-squre">
-        <img src="https://png.pngtree.com/element_origin_min_pic/17/03/15/4c1ae80f774b774ffa95cf0888f64103.jpg">
+        </div>
+      </div>
+      <div class="column">
+        <figure class="image is-squre">
+          <img v-bind:src="image" alt="">
         </figure>
+      </div>
     </div>
+
+
 
 
   </section>
@@ -28,5 +39,15 @@
 
 <script>
 
+import axios from 'axios';
+export default {
+data() {
+  return {}
+},
+async asyncData(){
+  const myImage = await axios.get('https://dog.ceo/api/breeds/image/random')
 
+  return{image: myImage.data.message};
+}
+};
 </script>
