@@ -13,6 +13,14 @@
       <div class="message-header">개란 무엇인가?</div>
       <div class="message-body">개는 인간의 반려 동물이다.</div>
     </article>
+    
+
+    <div class="container"><!--이미지 삽입-->
+      <figure class="image is-squre">
+        <img src="https://png.pngtree.com/element_origin_min_pic/17/03/15/4c1ae80f774b774ffa95cf0888f64103.jpg">
+        </figure>
+    </div>
+
 
   </section>
 </template>
