@@ -18,7 +18,7 @@
       <div class="column">
         <div class="notification is-info">
           <figure class="image is-squre">
-            <img src="https://png.pngtree.com/element_origin_min_pic/17/03/15/4c1ae80f774b774ffa95cf0888f64103.jpg" alt="">
+            <img src="~assets/dog.png" alt="">
           </figure>
 
         </div>
@@ -39,9 +39,9 @@
     <div class="box">
       <h1 class="title">보고 싶은 개정보를 누르세요</h1>
       <span v-for="dog in dogs" v-bind:key="dog">
-        <a herf="#" class="button is-info">
+        <nuxt-link :to="'/dogs/' + dog" class="button is-info">
           {{dog}}
-        </a> &nbsp;
+        </nuxt-link> &nbsp;
       </span>
     </div>
   </section>
