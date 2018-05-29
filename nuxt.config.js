@@ -22,6 +22,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['axios'],//모듈이 여러 vue file에 중복적으로 추가되는 작업 방지
     /*
     ** Run ESLint on save
     */
