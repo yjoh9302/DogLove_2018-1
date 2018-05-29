@@ -10,10 +10,15 @@
       </div>
 
     </article>
-    <article class="notification">
-        <figure class="image is-square">
+
+    <article class="notification is-success">
+      <div class="columns">
+        <div v-for="image in images" :key="image" class="column">
+          <figure class="image is-square">
             <img :src="image" alt="">
-        </figure>
+          </figure>
+        </div>
+      </div>
     </article>
 
   </section>
@@ -22,10 +27,17 @@
   import axios from 'axios';
   export default {
     async asyncData({params}) { //입력을 받아야됨 , asyncData12 이런식으로 이름을 임의로 바꾸면 안됨
-      const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
+      let maxImg = 4;
+      let images = [];
+
+      for (let i = 0; i < maxImg; i++) {
+        const image = await axios.get(`https://dog.ceo/api/breed/${params.dog}/images/random`);
+        images.push(image.data.message);
+      }
+      
       return {
         dogName: params.dog,
-        image: image.data.message
+        images: images
       };
 
     }
