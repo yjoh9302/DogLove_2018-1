@@ -7,7 +7,8 @@
       <div class="navbar-menu is-active"><!--브라우저 창에 맞게끔 자동으로 위치조정-->
         <div class="navbar-end">
           
-          <nuxt-link to="/about" class="navbar-item">소개</nuxt-link>
+          <nuxt-link to ="/stat" class = "navbar-item">통계</nuxt-link>
+          <nuxt-link to ="/about" class="navbar-item">소개</nuxt-link>
         </div>
       </div>
     </nav>
