@@ -10,7 +10,7 @@
 
             </div>
             <div class="message-body">
-                <div id="charArea"></div>
+                <div id="chartArea"></div>
             </div>
         </article>
     </section>
