@@ -47,8 +47,9 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
     }
-  }
-}
+  },
+  plugins: [{ src : "~/plugins/myBarChart", ssr: false}]
+};
