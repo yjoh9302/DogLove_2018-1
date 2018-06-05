@@ -13,6 +13,7 @@
     </nav>
     <nuxt/>
     <footer class="footer has-text-centered">
+      
         <p>2018년 목원대학교 개사랑. 저작권 모든 저작권은 개사랑에 있습나다.</p>
         
       </footer>
