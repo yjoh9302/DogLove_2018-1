@@ -2,7 +2,11 @@
   <div>
     <nav class="navbar">
       <div class="navbar-brand">
-        <nuxt-link to="/" class="navbar-item">개사랑</nuxt-link>
+        <nuxt-link to="/" class="navbar-item">
+          <figure class="image is-48x48">
+            <img class = "image" src="~static/dogicon.png" alt="">
+          </figure>
+        </nuxt-link>
       </div>
       <div class="navbar-menu is-active"><!--브라우저 창에 맞게끔 자동으로 위치조정-->
         <div class="navbar-end">
@@ -15,7 +19,11 @@
     <nuxt/>
     <footer class="footer has-text-centered">
       
-        <p>2018년 목원대학교 개사랑. 저작권 모든 저작권은 개사랑에 있습나다.</p>
+        <span class="content">
+            
+          <img src="~assets/dog.png" alt="" width="32" height="32"> 2018년 목원대학교 개사랑. 모든 저작권은 개사랑에 있습니다.
+              
+        </span>
         
       </footer>
   </div>

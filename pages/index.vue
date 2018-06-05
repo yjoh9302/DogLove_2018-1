@@ -3,6 +3,9 @@
     <div class="hero is-info">
       <div calss="hero-body">
         <div class="container">
+          <figure class="image is-128x128">
+            <img src="~assets/dog.png" alt="">
+          </figure>
           <h1 class="title is-1">개사랑</h1>
           <h2 class="subtitle">개를 좋아하는 사람들</h2>
         </div>
